@@ -25,6 +25,7 @@
 - [ ] tcpdump
 - [ ] termshark
 - [ ] iftop
+- [x] [iperf](net.md#iperf)：测试网速与带宽.
 - [x] ifconfig/ip addr
 
 ### 磁盘
