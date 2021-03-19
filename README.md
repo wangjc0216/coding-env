@@ -29,7 +29,7 @@
 - [x] ifconfig/ip addr
 
 ### 磁盘
-- [ ] duf
+- [x] [duf](disk.md#duf):查看磁盘信息
 - [x] df
 
 ### 内存 CPU
