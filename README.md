@@ -16,7 +16,9 @@
 - [ ] apt
 
 ## 开发环境
-- [ ] Go
+- [x] [Go](code.md#Go):Go编译器
+- [x] [GCC](code.md#GCC):C编译器
+- [ ] Git
 
 # 运维
 
