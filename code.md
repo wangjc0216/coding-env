@@ -25,3 +25,11 @@ ref: [Go官网](https://golang.org/dl/)
 //centos
 sudo yum install -y gcc
 ```
+
+## [dlv](#dlv)
+
+```shell
+go get -u github.com/go-delve/delve/cmd/dlv
+dlv version
+```
+
