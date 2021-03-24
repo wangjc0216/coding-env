@@ -34,3 +34,30 @@ ref: [Linux下3种常用的网络测速工具](https://juejin.cn/post/6844904152
 
 
 
+## [tcpdump](tcpdump)
+
+tcpdump是通过libpcap来抓取报文的，libpcap在不同平台有不同的实现。
+
+//todo 在极客时间记得有张图片来描述tcpdump的抓包逻辑
+```
+//centos tcpdump的安装
+yum install -y tcpdump 
+//将从eth0网卡传出，且目的地址为198的网络包 输出到198.pcap文件中，后续可以使用wireshark/termshark来解析
+tpducmp -ni eth0 dst 10.0.0.198 -w 198.pcap
+
+```
+
+## [termshark](termshark)
+termshark就是linux终端版本的wireshark
+```
+//使用go get 来进行安装
+go get github.com/gcla/termshark/v2/cmd/termshark
+//termshark用以分析test.pcap文件
+termshark -r test.pcap
+//termshark也可以做抓包分析
+termshark -i eth0 
+```
+
+
+
+

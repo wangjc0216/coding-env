@@ -19,14 +19,14 @@
 - [x] [Go](code.md#Go):Go编译器
 - [x] [GCC](code.md#GCC):C编译器
 - [x] [dlv](code.md#dlv):Go调试工具
-- [ ] Git
+- [ ] [Git](git.md):最常用的版本控制系统
 
 # 运维
 
 ### 网络
 
-- [ ] tcpdump
-- [ ] termshark
+- [x] [tcpdump](net.md#tcpdump):网络抓包
+- [x] [termshark](net.md#termshark):linux终端版本的wireshark
 - [ ] iftop
 - [x] [iperf](net.md#iperf)：测试网速与带宽.
 - [x] ifconfig/ip addr
