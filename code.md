@@ -41,5 +41,11 @@ dlv debug --headless --listen=:2345 --api-version=2 [main]|[main.go]
 dlv debug --headless --listen=:2345 --api-version=2 [main]|[main.go] -- -param1 p1 -param2 p2
 //可以远程调试测试文件
 dlv  test --headless --listen=:2345 --api-version=2
+//可以远程调试可执行文件,wd代表执行文件所执行所在的目录
+dlv  --headless --listen=:2345 --api-version=2 exec ./executeable  (--wd  workspace)  -- -param1 p1 -param2 p2 
 ```
-
+需要了解，
+```shell
+//因为我们使用dlv调试，所以需要构建的时候需要阻止Go的优化内联等操作
+go build -gcflags \"all=-N -l\" github.com/app/demo  
+```
