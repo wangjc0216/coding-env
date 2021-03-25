@@ -28,8 +28,18 @@ sudo yum install -y gcc
 
 ## [dlv](#dlv)
 
+dlv 的安装：
 ```shell
 go get -u github.com/go-delve/delve/cmd/dlv
 dlv version
+```
+在相应的源码路径下，使用dlv：
+```
+//可以远程调试main函数 
+dlv debug --headless --listen=:2345 --api-version=2 [main]|[main.go] 
+//对main函数可以添加参数
+dlv debug --headless --listen=:2345 --api-version=2 [main]|[main.go] -- -param1 p1 -param2 p2
+//可以远程调试测试文件
+dlv  test --headless --listen=:2345 --api-version=2
 ```
 
