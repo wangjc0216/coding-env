@@ -13,6 +13,9 @@ export PATH=$PATH:$GOPATH:/usr/local/go/bin
 
 4.设置代理(在较高版本都需要GOPROXY)
 go env -w GOPROXY=https://goproxy.cn,direct
+5.GO Modules配置
+go env -w GO111MODULE=auto
+ 
 
 5.查看go安装情况
 go version
