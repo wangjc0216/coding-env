@@ -17,11 +17,13 @@
 
 ## 开发环境
 - [x] [Go](code.md#Go):Go编译器
-- []  [gv]: pprof 相关视图
+  
+- [ ] [godoc](code.md#godoc):godoc 
+- [ ] [gv]: pprof 相关视图
 - [x] [GCC](code.md#GCC):C编译器
 - [x] [dlv](code.md#dlv):Go调试工具
 - [ ] [Git](git.md):最常用的版本控制系统
-
+- [ ] [graphviz](code.md#graphviz): 常用的图形可视化工具
 # 运维
 
 ### 网络

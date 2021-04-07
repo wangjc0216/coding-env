@@ -49,3 +49,12 @@ dlv  --headless --listen=:2345 --api-version=2 exec ./executeable  (--wd  worksp
 //因为我们使用dlv调试，所以需要构建的时候需要阻止Go的优化内联等操作
 go build -gcflags \"all=-N -l\" github.com/app/demo  
 ```
+
+
+## [graphviz](#graphviz)
+`graphviz`是开源的图形可视化软件，可以将抽象信息进行可视化(如Go中的prof文件可以使用graphviz进行可视化；如puml文件可以通过graphviz进行可视化)。
+[官方链接](http://www.graphviz.org/)
+```
+//Mac
+
+```
