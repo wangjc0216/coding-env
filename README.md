@@ -18,7 +18,7 @@
 ## 开发环境
 - [x] [Go](code.md#Go):Go编译器
   
-- [ ] [godoc](code.md#godoc):godoc 
+- [x] [godoc](code.md#godoc):godoc 
 - [ ] [gv]: pprof 相关视图
 - [x] [GCC](code.md#GCC):C编译器
 - [x] [dlv](code.md#dlv):Go调试工具

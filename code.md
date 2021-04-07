@@ -22,6 +22,15 @@ go version
 ```
 ref: [Go官网](https://golang.org/dl/)
 
+## [godoc](#godoc)
+```shell
+//在Go1.12版本之后，就不再默认安装godoc工具了，需要自己手动安装
+go get -u -v golang.org/x/tools/cmd/godoc
+//启动godoc服务
+godoc -http=:6060
+```
+我们会发现，开源的包会提供一些代码示例(Example)，这个在godoc文档中也会有体现。
+
 
 ## [GCC](#GCC)
 ```
