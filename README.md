@@ -19,7 +19,7 @@
 - [x] [Go](code.md#Go):Go编译器
   
 - [x] [godoc](code.md#godoc):godoc 
-- [ ] [gv]: pprof 相关视图
+- [ ] [gv](): pprof 相关视图
 - [x] [GCC](code.md#GCC):C编译器
 - [x] [dlv](code.md#dlv):Go调试工具
 - [ ] [Git](git.md):最常用的版本控制系统
@@ -37,6 +37,7 @@
 ### 磁盘
 - [x] [duf](disk.md#duf):查看磁盘信息
 - [x] df
+- [x] [ncdu](disk.md#ncdu):du可视化加强版
 
 ### 内存 CPU
 - [x] top
