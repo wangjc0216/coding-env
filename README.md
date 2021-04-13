@@ -33,7 +33,7 @@
 - [ ] iftop
 - [x] [iperf](net.md#iperf)：测试网速与带宽.
 - [x] ifconfig/ip addr
-
+- [x] [httpstat](net.md#httpstat):http请求工具，类似curl
 ### 磁盘
 - [x] [duf](disk.md#duf):查看磁盘信息
 - [x] df
