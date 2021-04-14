@@ -44,7 +44,8 @@ tcpdump是通过libpcap来抓取报文的，libpcap在不同平台有不同的�
 yum install -y tcpdump 
 //将从eth0网卡传出，且目的地址为198的网络包 输出到198.pcap文件中，后续可以使用wireshark/termshark来解析
 tpducmp -ni eth0 dst 10.0.0.198 -w 198.pcap
-
+//将从eth0网卡传出，目的地址为192.168.100.4，端口为8080（目的端口或者源端口），tcp协议
+sudo tcpdump -i eth0 '((tcp) and (port 8080) and (dst host 192.168.100.4 )  )'
 ```
 
 ## [termshark](termshark)
