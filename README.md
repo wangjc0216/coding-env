@@ -18,9 +18,16 @@
 - [x] Draw.io
 - [x] Microsoft OneNote
 - [x] Sketch
-- [x] zFuse
+- [x] zFuse: 视频播放器
 - [x] BaiduYun
 - [x] Postman
+- [x] Slack
+- [x] Postman
+- [x] RSS feed Reader: Chrome插件
+- [x] Vimium: Chrome插件
+- [x] 划词翻译: Chrome插件
+- [x] SwitchyOmega: Chrome插件
+- [x] Alfred4 
 
 ## 容器 
 
