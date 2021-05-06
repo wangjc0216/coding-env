@@ -4,6 +4,26 @@
 
 对于开发环境的一个整理集成。方便在分配到新的测试机后快速适配环境。
 
+## 日常
+
+- [x] gmail:可以使用App Store进行安装
+
+## 软件
+
+- [x] typora
+- [x] WPS
+- [x] pdf expert
+- [x] Xmind Zen
+- [x] Wireshark
+- [x] visual Paradigm
+- [x] DingDing
+- [x] Company VPN
+- [x] Draw.io
+- [x] Microsoft OneNote
+- [x] Sketch
+- [x] zFuse
+- [x] BaiduYun
+- [x] Postman
 
 ## 容器 
 
@@ -24,7 +44,11 @@
 - [x] [dlv](code.md#dlv):Go调试工具
 - [ ] [Git](git.md):最常用的版本控制系统
 - [ ] [graphviz](code.md#graphviz): 常用的图形可视化工具
-# 运维
+- [ ] [Goland]
+- [ ] [iterm2]
+- [x] [Chrome MYSQL Admin](code.md#mysql):轻便好用的Mysql客户端工具 
+
+## 运维
 
 ### 网络
 

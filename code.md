@@ -70,3 +70,7 @@ go build -gcflags \"all=-N -l\" github.com/app/demo
 //Mac
 
 ```
+
+## [Chrome MYSQL Admin](#mysql)
+`Chrome MYSQL Admin`是一个轻量的Mysql客户端，还可以计算吞吐量，收发字节数等。
+[官方链接](https://chrome.google.com/webstore/detail/chrome-mysql-admin/ndgnpnpakfcdjmpgmcaknimfgcldechn/related)
