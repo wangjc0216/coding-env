@@ -67,3 +67,19 @@ go get github.com/davecheney/httpstat
 ```
 ref： [项目地址](https://github.com/davecheney/httpstat)
 
+
+## [httpie](httpie)
+httpie 是JSON格式支持、语法高亮、持久化会话、wget-like、插件等等。
+```shell
+//CentOS
+yum install -y httpie
+//Mac
+brew install httpie
+//一些使用
+http github.com
+
+http -v github.com
+
+http -v PUT  httpbin.org/put hello=world1
+```
+ref: [项目地址](https://httpie.io/)
