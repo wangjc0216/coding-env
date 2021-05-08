@@ -74,3 +74,24 @@ go build -gcflags \"all=-N -l\" github.com/app/demo
 ## [Chrome MYSQL Admin](#mysql)
 `Chrome MYSQL Admin`是一个轻量的Mysql客户端，还可以计算吞吐量，收发字节数等。
 [官方链接](https://chrome.google.com/webstore/detail/chrome-mysql-admin/ndgnpnpakfcdjmpgmcaknimfgcldechn/related)
+
+
+## [Goland](#goland)
+
+- [x] Docker 
+
+需要在测试机让Docker可以远程连接TCP服务。在/etc/docker/daemon.json
+```shell
+{
+ "hosts":[
+    "tcp://0.0.0.0:2375"
+  ],
+ "registry-mirrors": ["http://f1361db2.m.daocloud.io"]
+}
+```
+[相关参考](https://zhuanlan.zhihu.com/p/94224305)
+
+
+- [x] Kubernetes 
+
+Market可以下载并且配置.kube/config文件，即可使用
