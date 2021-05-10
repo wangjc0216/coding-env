@@ -78,7 +78,15 @@ go build -gcflags \"all=-N -l\" github.com/app/demo
 
 ## [Goland](#goland)
 
-- [x] Docker 
+Goland 插件列表
+
+- [x] Docker
+- [x] Kubernetes
+- [x] Remote Hosts Access
+- [x] PlantUML integration
+
+
+### Docker 
 
 需要在测试机让Docker可以远程连接TCP服务。在/etc/docker/daemon.json
 ```shell
@@ -91,7 +99,68 @@ go build -gcflags \"all=-N -l\" github.com/app/demo
 ```
 [相关参考](https://zhuanlan.zhihu.com/p/94224305)
 
-
-- [x] Kubernetes 
+### Kubernetes 
 
 Market可以下载并且配置.kube/config文件，即可使用
+
+### Remote Hosts Access
+
+[相关参考1](https://blog.csdn.net/u013536232/article/details/104123861)
+[相关参考2](https://blog.csdn.net/K346K346/article/details/105822846)
+### PlantUML integration
+
+PlantUML可以通过一种直观的语言来定义绘图的[开源项目](https://plantuml.com/zh/) 。
+
+`go-package-plantuml`工具通过Go代码生成puml图。进行下载并安装：
+```shell
+go get github.com/wangjc0216/go-package-plantuml
+```
+因为`go-package-plantuml`通过`--outputfile`参数没有什么作用，所以只能通过使用脚本（先生成然后通过linux 命令 mv 来移动到指定的文件夹）
+来进行使用。脚本如下：
+```shell
+//go-package-plantuml_mv.sh 
+#!/bin/bash
+while getopts ":c:g:o:" opt; do
+    case "$opt" in
+      c)
+        CODEDIR=$OPTARG
+        ;;
+      g)
+        GOPATH1=$OPTARG
+        ;;
+      o)
+        OUTPUTFILE=$OPTARG
+        ;;
+    esac
+done
+
+echo $CODEDIR  $GOPATH1   $OUTPUTFILE
+
+if [ "$CODEDIR" == "" ]; then
+    echo "codedir is nil"
+    exit 1
+elif [ "$GOPATH1" == "" ]; then
+    echo "gopath is nil"
+    exit 1
+elif [ "$OUTPUTFILE" == "" ]; then
+    echo "outputfile is nil"
+    exit 1
+fi
+echo $CODEDIR  $GOPATH1   $OUTPUTFILE
+
+/Users/jcwang/gopath/bin/go-package-plantuml --codedir $CODEDIR  --gopath $GOPATH1 --outputfile  $OUTPUTFILE
+mv /tmp/uml.txt  $OUTPUTFILE
+```
+在Reference/Tools/External Tools中安装gotouml工具，配置如下：
+
+![gotouml](img/gotouml.png)
+
+Paragrm: /Users/jcwang/gopath/bin/go-package-plantuml_mv.sh
+
+Arguments: -c $FileDir$ -g $GOPATH$ -o $FileDir$.puml
+
+Working Directory: /Users/jcwang/gopath/bin
+
+配置完成后，在Go文件中右键External tool/gotouml 就可以生成本地目录的puml文件了。
+
+`PlantUML integration`是一个将puml文件可视化的工具，但对于过于复杂的plantUml，会存在解析失败的问题，该插件直接在Market中安装就行。
