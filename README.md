@@ -23,11 +23,17 @@
 - [x] Postman
 - [x] Slack
 - [x] Postman
-- [x] RSS feed Reader: Chrome插件
-- [x] Vimium: Chrome插件
-- [x] 划词翻译: Chrome插件
-- [x] SwitchyOmega: Chrome插件
+- [x] Chrome插件
+```shell
+RSS feed Reader
+Vimium
+划词翻译
+SwitchyOmega
+JSONView
+```
 - [x] Alfred4 
+
+
 
 ## 容器 
 
@@ -56,7 +62,7 @@
 
 ### 常用命令
 
-- [] [jq]
+- [ ] [jq]
 
 
 ### 网络
