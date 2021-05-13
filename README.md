@@ -57,7 +57,7 @@ JSONView
 - [ ] [Goland]
 - [ ] [iterm2]
 - [x] [Chrome MYSQL Admin](code.md#mysql):轻便好用的Mysql客户端工具 
-
+- [x] [kubeval](https://www.kubeval.com/): 用于k8s yaml文件的检查
 ## 运维
 
 ### 常用命令
