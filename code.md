@@ -164,3 +164,20 @@ Working Directory: /Users/jcwang/gopath/bin
 配置完成后，在Go文件中右键External tool/gotouml 就可以生成本地目录的puml文件了。
 
 `PlantUML integration`是一个将puml文件可视化的工具，但对于过于复杂的plantUml，会存在解析失败的问题，该插件直接在Market中安装就行。
+
+
+
+### [gh-md-toc](#gh-md-toc)
+在github中，`[TOC]`是不可用的。所以我们可以使用gh-md-toc工具来手动生成目录。
+
+将gh-md-toc下载到本地PATH目录下(我之前是下载到gopath/bin目录下了)：
+```shell
+$ curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o gh-md-toc
+$ chmod a+x gh-md-toc
+```
+使用起来如下：
+```shell
+cat README.md| gh-md-toc -
+```
+即可生成类似Markdown中的`[TOC]`的作用。
+[参考链接](https://github.com/ekalinin/github-markdown-toc)

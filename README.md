@@ -47,7 +47,6 @@ JSONView
 
 ## 开发环境
 - [x] [Go](code.md#Go):Go编译器
-  
 - [x] [godoc](code.md#godoc):godoc 
 - [ ] [gv](): pprof 相关视图
 - [x] [GCC](code.md#GCC):C编译器
@@ -58,6 +57,8 @@ JSONView
 - [ ] [iterm2]
 - [x] [Chrome MYSQL Admin](code.md#mysql):轻便好用的Mysql客户端工具 
 - [x] [kubeval](https://www.kubeval.com/): 用于k8s yaml文件的检查
+- [x] [gh-md-toc](code.md#gh-md-toc): 生成Markdown目录
+
 ## 运维
 
 ### 常用命令
