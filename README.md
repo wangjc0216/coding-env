@@ -64,7 +64,7 @@ JSONView
 ### 常用命令
 
 - [ ] [jq]
-
+- [x] [yq](common.md#yq):yaml format
 
 ### 网络
 
